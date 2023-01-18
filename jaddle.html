@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <meta charset="utf=8">
+        <title>Jaddle</title>
+        <link rel="stylesheet" href="jaddle.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class = "score">Score: <p id = "scoreNum">0</p></div>
+        <div class = "score">Round: <p id = "roundNum">1</p></div>
+
+        <h1>Jaddle</h1>
+        <div class = "numberOfLetters">
+            <label class="numberOfLettersLabel" for="numberOfLettersInput">Enter the number of letters you would like to reveal: </label>
+            <input type="number" class="numberOfLettersInput">
+            <input type="button" value="Submit number" class="numberOfLettersButton">
+        </div>
+
+        <p class="comment"></p>
+
+        <div class ="endOfRoundButtons">
+            <input type="button" value="Guess" class="guessButton">
+        </div>
+        <div>
+            <p class="lettersGuessedTitle">Letters Guessed:</p>
+            <p class="lettersGuessed"></p>
+        </div>
+        <div id="massRemove">
+        </div>
+        <script src="node_modules/random-words/index.js"></script>
+        <script type="text/javascript" src="jaddle.js"></script>
+    </body>
+</html>
